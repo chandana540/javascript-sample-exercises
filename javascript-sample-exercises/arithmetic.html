@@ -1,0 +1,76 @@
+<script>
+    var ch=prompt("enter choice of operation: 1.adition 2.multiplication 3.division 4.modulo division") 
+
+    var a=prompt("enter one value");
+  var b=prompt("enter one value");
+  var c; 
+  function add()
+    {
+      "use strict";
+        c=parseInt(a) + parseInt(b);
+        alert("addition is"+ c);
+      //  document.writeln("<br>")
+    
+    
+    }     
+    function mul()
+    {
+      "use strict";
+        c=a*b;
+        alert("multiplication is" + c)
+      //  document.writeln("<br>")
+        
+    }
+    function div()
+    {
+      "use strict";
+        c=a/b;
+        alert("division is" + c)
+       // document.writeln("<br>")
+        
+    }
+    function modulo()
+    {
+      "use strict"
+        c=a%b;
+        alert("modulo division is" + c)
+        //document.writeln("<br>")
+        
+    }
+
+do
+{ 
+ 
+  switch(parseInt(ch))
+  {
+
+  case 1:
+   
+    add();
+    break;
+
+    case 2:
+   
+    mul();
+    break;
+    case 3:
+   div();
+    break;
+    case 4:
+   
+    modulo();
+    break;
+    default:
+        alert("invalid choice")
+        break;
+        choice=prompt("do you want to continue")
+}while (choice==true) 
+}
+
+
+  //  add();
+  //  mul();
+  //  div();
+   // modulo();
+   
+</script>
