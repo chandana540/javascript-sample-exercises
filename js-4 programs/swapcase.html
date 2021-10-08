@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>swap case</title>
+        <script>
+       function casechange()
+       {
+           var str="Hello World";
+           var arr= str.toUpperCase().split(" ");                //split with empty space means string converted to array with commas in it
+           //console.log(arr)
+           var res=arr.map(function (ele)
+           {
+              console.log(ele)
+             
+            return  ele.replace(ele.charAt(0),ele.charAt(0).toLowerCase());          //return is important to join the values in array afterwards
+           
+      
+           
+           })
+        
+         console.log( res.join(" "));
+         
+         
+
+       }
+      console.log(  casechange());
+            
+    
+        </script>
+    </head>
+</html>
